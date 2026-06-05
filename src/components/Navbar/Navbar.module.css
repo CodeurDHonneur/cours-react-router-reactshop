@@ -1,0 +1,37 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+
+  background-color: var(--color-dark);
+  box-shadow: var(--shadow-sm);
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  color: var(--color-white);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.links a:hover {
+  color: var(--color-primary);
+}
+
+.active {
+  color: #60a5fa !important;
+  border-bottom: 2px solid #60a5fa;
+  padding-bottom: 5px;
+}

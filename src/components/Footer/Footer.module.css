@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+
+    margin-top: 60px;
+    padding: 20px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.content p,
+.content span {
+    color: #d1d5db;
+    font-size: 14px;
+}
