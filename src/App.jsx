@@ -41,6 +41,7 @@ function App() {
         <Route element={<AuthLayout />}>
           <Route path="/login" element={<Login />} />
         </Route>
+        
         {/* DASHBOARD */}
         <Route element={<DashboardLayout />}>
           <Route path='/dashboard' element={<Dashboard />} />
