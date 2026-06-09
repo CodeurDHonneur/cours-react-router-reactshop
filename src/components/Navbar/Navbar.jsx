@@ -32,7 +32,7 @@ function Navbar() {
                 Contact
             </NavLink>
             <NavLink 
-            to="/login"
+            to="/auth/login"
             className={({ isActive}) => isActive ? styles.active : ""}>
                 Login
             </NavLink>
