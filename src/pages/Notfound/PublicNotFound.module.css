@@ -1,0 +1,81 @@
+.notFound {
+    min-height: 70vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+.card {
+    max-width: 500px;
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.code {
+    font-size: 90px;
+    font-weight: bold;
+
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.primaryBtn {
+    background-color: var(--color-primary);
+    color: white;
+
+    padding: 12px 18px;
+
+    border-radius: var(--radius-md);
+
+    transition: 0.3s;
+}
+
+.primaryBtn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.secondaryBtn {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+
+  padding: 12px 18px;
+
+  border-radius: var(--radius-md);
+
+  color: var(--color-dark);
+
+  transition: 0.3s;
+}
+
+.secondaryBtn:hover {
+  background-color: #f3f4f6;
+}
