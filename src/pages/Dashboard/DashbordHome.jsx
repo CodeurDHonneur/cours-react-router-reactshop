@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from "./Dashboard.module.css"
+import styles from "./DashbordHome.module.css"
 
 
-function Dashboard() {
+function DashbordHome() {
   return (
     <section className={`container ${styles.dashboard}`}>
       <div className={styles.header}>
@@ -66,4 +66,4 @@ function Dashboard() {
   )
 }
 
-export default Dashboard
+export default DashbordHome
