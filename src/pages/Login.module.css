@@ -39,6 +39,7 @@
   font-size: 14px;
 
   transition: 0.2s;
+  
 }
 
 .input:focus {
@@ -60,4 +61,55 @@
 
 .button:hover {
   background-color: var(--color-primary-hover);
+}
+
+.error {
+  color: #ef4444;
+
+  font-size: 13px;
+
+  text-align: center;
+
+  margin-top: -5px;
+}
+
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  background: white;
+}
+
+.passwordInput {
+  flex: 1;
+
+  padding: 12px 14px;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+.toggleButton {
+  background: transparent;
+
+  border: none;
+
+  cursor: pointer;
+
+  padding: 0 14px;
+
+  font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
