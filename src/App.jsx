@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Products from './pages/Products'
@@ -19,9 +19,12 @@ import DashboardProfile from "./pages/Dashboard/DashboardProfile";
 import PublicNotFound from "./pages/NotFound/PublicNotFound"
 import DashboardNotFound from "./pages//NotFound/DashboardNotFound"
 import AuthNotFound from './pages/NotFound/AuthNotFound'
+import ProtectedRoute from './components/ProtectedRoute'
 
 
 function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
   return (
     <>
       {/* <Navbar />
@@ -50,7 +53,7 @@ function App() {
         {/* Authentification */}
         <Route path="/auth" element={<AuthLayout />}>
           <Route index element={<Navigate to="login" />} />
-          <Route path="login" element={<Login />} />
+          <Route path="login" element={<Login auth={setIsAuthenticated}/>} />
           <Route path="*" element={<AuthNotFound />} />
         </Route>
 
@@ -79,7 +82,15 @@ function App() {
 
         </Route> */}
 
-        <Route path="/dashboard" element={<DashboardLayout />}>
+        {/* <Route path="/dashboard" element={<DashboardLayout />}> */}
+        <Route path="/dashboard"
+          element={
+            <ProtectedRoute 
+            isAuthenticated={isAuthenticated}
+            >
+              <DashboardLayout />
+            </ProtectedRoute>
+          }>
 
           <Route
             index
