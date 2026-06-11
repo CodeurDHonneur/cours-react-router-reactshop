@@ -21,6 +21,9 @@
 
   --radius-md: 10px;
 
+  --loader-svg-width: 250px;
+  --loader-svg-height: 200px;
+
 }
 
 /* BASE */

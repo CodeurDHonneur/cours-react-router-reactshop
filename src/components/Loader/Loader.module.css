@@ -1,0 +1,28 @@
+
+.svgDef {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.mainViewContainer {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(150, 2%, 16%, 1);
+}
+
+.loaderContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: var(--loader-svg-width) / 2;
+    margin-top: var(--loader-svg-height) / 2;
+}
+
+.reflection {
+    transform-origin: 50% 110%;
+    transform: scaleY(-1);
+    opacity: 0.09;
+}
